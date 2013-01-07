@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<!DOCTYPE PRJ SYSTEM "myApp.dtd">
+<PRJ>
+  <Project_ID>
+    <Signature>UE Proj: v.1</Signature>
+  </Project_ID>
+  <Project_Information>
+    <Filter></Filter>
+    <Include_Sub_Dir>1</Include_Sub_Dir>
+    <Relative_to_Project_File>1</Relative_to_Project_File>
+    <Word_File></Word_File>
+    <Use_Relative_Dir>1</Use_Relative_Dir>
+    <Project_Directory>/Users/hnww/Dropbox/Personal project/OpenSource/myApp</Project_Directory>
+  </Project_Information>
+</PRJ>

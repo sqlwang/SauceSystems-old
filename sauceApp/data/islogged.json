@@ -1,0 +1,4 @@
+{
+    success: true,
+    user:{id: 1, name: 'Fulano de Tal',    email: 'fulano@servidor.com.br'}
+}

@@ -1,0 +1,107 @@
+#app-header {
+    font-family: Arial, sans-serif;
+    color: #CCCCCC;
+    font-size: 22px;
+    font-weight: 200;
+    text-shadow: 0 1px 0 #fff;
+}
+#app-header .subtitle {
+    font-size: 14px;
+    color: #C0272B;
+}
+
+.checkbox-labels{
+    margin-left: 10px;
+}
+
+.x-fieldset-header-text{
+    margin: 0 3px;
+}
+
+.dirtyfield {
+    background-color: #ff0;
+}
+
+/*图标*/
+.icon-user-add {
+    background-image: url(../images/icons/user_add.png) !important;
+    width: 16px;
+	height: 16px;
+}
+.icon-user-edit {
+    background-image: url(../images/icons/user_edit.png) !important;
+    width: 16px;
+	height: 16px;
+}
+.icon-user-delete {
+    background-image: url(../images/icons/user_delete.png) !important;
+    width: 16px;
+	height: 16px;
+}
+
+
+.icon-role-add {
+    background-image: url(../images/icons/group_add.png) !important;
+    width: 16px;
+	height: 16px;
+}
+.icon-role-edit {
+    background-image: url(../images/icons/group_edit.png) !important;
+    width: 16px;
+	height: 16px;
+}
+.icon-role-delete {
+    background-image: url(../images/icons/group_delete.png) !important;
+    width: 16px;
+	height: 16px;
+}
+
+.icon-operation-add {
+    background-image: url(../images/icons/application_add.png) !important;
+    width: 16px;
+	height: 16px;
+}
+.icon-operation-edit {
+    background-image: url(../images/icons/application_edit.png) !important;
+    width: 16px;
+	height: 16px;
+}
+.icon-operation-delete {
+    background-image: url(../images/icons/application_delete.png) !important;
+    width: 16px;
+	height: 16px;
+}
+
+.icon-task-add {
+    background-image: url(../images/icons/note_add.png) !important;
+    width: 16px;
+	height: 16px;
+}
+.icon-task-edit {
+    background-image: url(../images/icons/note_edit.png) !important;
+    width: 16px;
+	height: 16px;
+}
+.icon-task-delete {
+    background-image: url(../images/icons/note_delete.png) !important;
+    width: 16px;
+	height: 16px;
+}
+
+.icon-assign-add {
+    background-image: url(../images/icons/report_add.png) !important;
+    width: 16px;
+	height: 16px;
+}
+.icon-assign-edit {
+    background-image: url(../images/icons/report_edit.png) !important;
+    width: 16px;
+	height: 16px;
+}
+.icon-assign-delete {
+    background-image: url(../images/icons/report_delete.png) !important;
+    width: 16px;
+	height: 16px;
+}
+
+

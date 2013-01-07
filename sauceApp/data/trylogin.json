@@ -1,0 +1,5 @@
+{
+    success: true,
+    user:{id: 1, name: 'Ed',    email: 'ed@sencha.com'},
+    msg:''
+}

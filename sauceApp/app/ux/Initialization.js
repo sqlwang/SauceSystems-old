@@ -10,6 +10,24 @@
  *
  */
 
+var SaucePrivileges = '';
+
+/* @param {string} method The module method
+* @param {string} id The module id property
+*/
+function isAllowedTo(action, privilege){
+	console.log('privilege', privilege)
+	if(action !== '' && privilege != ''){
+     	if(Ext.Array.indexOf(privilege, action) > 0 ){
+       		return true;
+    	}else{
+    		return false;
+    	}
+  	}else{
+  		return false;
+  	}
+}
+
 Ext.define('Ext.ux.Initialization', {
 	requires : ['Ext.ux.Router']
 }, (function() {
@@ -59,8 +77,6 @@ Ext.define('Ext.ux.Initialization', {
 					}
 				},
 				failure : function(result, request) {
-					console.log(result);
-					console.log(request);
 					switch (result.failureType) {
 						case Ext.form.action.Action.CLIENT_INVALID:
 							Ext.MessageBox.alert('Erro', "Campos inv&#225;lidos");

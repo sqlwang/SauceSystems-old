@@ -7203,3 +7203,267 @@ Stack trace:
 REQUEST_URI=/lionwangbak/myApp/sauceApp/index.php/privileges/AssignRoleDelete?_dc=1357225038220
 in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\PrivilegesController.php (596)
 in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php (13)
+2013/01/07 16:32:09 [error] [php] Undefined index: operationName (F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\PrivilegesController.php:596)
+Stack trace:
+#0 F:\xampp\htdocs\lionwangbak\myApp\framework\web\filters\CFilterChain.php(134): PrivilegesController->runAction()
+#1 F:\xampp\htdocs\lionwangbak\myApp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 F:\xampp\htdocs\lionwangbak\myApp\framework\web\filters\CInlineFilter.php(59): PrivilegesController->filterAccessControl()
+#4 F:\xampp\htdocs\lionwangbak\myApp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(292): CFilterChain->run()
+#6 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(266): PrivilegesController->runActionWithFilters()
+#7 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(283): PrivilegesController->run()
+#8 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 F:\xampp\htdocs\lionwangbak\myApp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php(13): CWebApplication->run()
+REQUEST_URI=/lionwangbak/myApp/sauceApp/index.php/privileges/AssignRoleDelete?_dc=1357572729774
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\PrivilegesController.php (596)
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php (13)
+2013/01/28 15:45:25 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23505]: Unique violation: 7 错误:  重复键违反唯一约束"authitem_pkey"
+DETAIL:  键值"(name)=(dasdas)" 已经存在. The SQL statement executed was: INSERT INTO "authitem" ("name", "type", "description", "bizrule", "data") VALUES (:name, :type, :description, :bizrule, :data).
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\PrivilegesController.php (405)
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php (13)
+2013/01/28 15:46:08 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23505]: Unique violation: 7 错误:  重复键违反唯一约束"authitemchild_pkey"
+DETAIL:  键值"(parent, child)=(admin, post2)" 已经存在. The SQL statement executed was: INSERT INTO "authitemchild" ("parent", "child") VALUES (:parent, :child).
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\PrivilegesController.php (566)
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php (13)
+2013/01/28 15:47:20 [error] [php] Undefined index: roleName (F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\PrivilegesController.php:559)
+Stack trace:
+#0 F:\xampp\htdocs\lionwangbak\myApp\framework\web\filters\CFilterChain.php(134): PrivilegesController->runAction()
+#1 F:\xampp\htdocs\lionwangbak\myApp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 F:\xampp\htdocs\lionwangbak\myApp\framework\web\filters\CInlineFilter.php(59): PrivilegesController->filterAccessControl()
+#4 F:\xampp\htdocs\lionwangbak\myApp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(292): CFilterChain->run()
+#6 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(266): PrivilegesController->runActionWithFilters()
+#7 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(283): PrivilegesController->run()
+#8 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 F:\xampp\htdocs\lionwangbak\myApp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php(13): CWebApplication->run()
+REQUEST_URI=/lionwangbak/myApp/sauceApp/index.php/privileges/AssignRoleCreate
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\PrivilegesController.php (559)
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php (13)
+2013/01/28 15:47:31 [error] [php] Undefined index: roleName (F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\PrivilegesController.php:559)
+Stack trace:
+#0 F:\xampp\htdocs\lionwangbak\myApp\framework\web\filters\CFilterChain.php(134): PrivilegesController->runAction()
+#1 F:\xampp\htdocs\lionwangbak\myApp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 F:\xampp\htdocs\lionwangbak\myApp\framework\web\filters\CInlineFilter.php(59): PrivilegesController->filterAccessControl()
+#4 F:\xampp\htdocs\lionwangbak\myApp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(292): CFilterChain->run()
+#6 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(266): PrivilegesController->runActionWithFilters()
+#7 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(283): PrivilegesController->run()
+#8 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 F:\xampp\htdocs\lionwangbak\myApp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php(13): CWebApplication->run()
+REQUEST_URI=/lionwangbak/myApp/sauceApp/index.php/privileges/AssignRoleCreate
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\PrivilegesController.php (559)
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php (13)
+2013/01/28 15:47:36 [error] [php] Undefined index: roleName (F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\PrivilegesController.php:559)
+Stack trace:
+#0 F:\xampp\htdocs\lionwangbak\myApp\framework\web\filters\CFilterChain.php(134): PrivilegesController->runAction()
+#1 F:\xampp\htdocs\lionwangbak\myApp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 F:\xampp\htdocs\lionwangbak\myApp\framework\web\filters\CInlineFilter.php(59): PrivilegesController->filterAccessControl()
+#4 F:\xampp\htdocs\lionwangbak\myApp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(292): CFilterChain->run()
+#6 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(266): PrivilegesController->runActionWithFilters()
+#7 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(283): PrivilegesController->run()
+#8 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 F:\xampp\htdocs\lionwangbak\myApp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php(13): CWebApplication->run()
+REQUEST_URI=/lionwangbak/myApp/sauceApp/index.php/privileges/AssignRoleCreate
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\PrivilegesController.php (559)
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php (13)
+2013/01/29 14:14:23 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity._id" is not defined.' in F:\xampp\htdocs\lionwangbak\myApp\framework\base\CComponent.php:131
+Stack trace:
+#0 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\models\LoginForm.php(70): CComponent->__get('_id')
+#1 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\SiteController.php(114): LoginForm->login()
+#2 F:\xampp\htdocs\lionwangbak\myApp\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#3 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(283): CController->run('Login')
+#7 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(142): CWebApplication->runController('Site/Login')
+#8 F:\xampp\htdocs\lionwangbak\myApp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/lionwangbak/myApp/sauceApp/index.php/Site/Login
+HTTP_REFERER=http://127.0.0.1/lionwangbak/myApp/sauceApp/
+---
+2013/01/29 14:14:23 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity._id" is not defined.' in F:\xampp\htdocs\lionwangbak\myApp\framework\base\CComponent.php:131
+Stack trace:
+#0 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\models\LoginForm.php(70): CComponent->__get('_id')
+#1 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\SiteController.php(114): LoginForm->login()
+#2 F:\xampp\htdocs\lionwangbak\myApp\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#3 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(283): CController->run('Login')
+#7 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(142): CWebApplication->runController('Site/Login')
+#8 F:\xampp\htdocs\lionwangbak\myApp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/lionwangbak/myApp/sauceApp/index.php/Site/Login
+HTTP_REFERER=http://127.0.0.1/lionwangbak/myApp/sauceApp/
+---
+2013/01/29 14:14:29 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity._id" is not defined.' in F:\xampp\htdocs\lionwangbak\myApp\framework\base\CComponent.php:131
+Stack trace:
+#0 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\models\LoginForm.php(70): CComponent->__get('_id')
+#1 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\SiteController.php(114): LoginForm->login()
+#2 F:\xampp\htdocs\lionwangbak\myApp\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#3 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(283): CController->run('Login')
+#7 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(142): CWebApplication->runController('Site/Login')
+#8 F:\xampp\htdocs\lionwangbak\myApp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/lionwangbak/myApp/sauceApp/index.php/Site/Login
+HTTP_REFERER=http://127.0.0.1/lionwangbak/myApp/sauceApp/
+---
+2013/01/29 14:14:29 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity._id" is not defined.' in F:\xampp\htdocs\lionwangbak\myApp\framework\base\CComponent.php:131
+Stack trace:
+#0 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\models\LoginForm.php(70): CComponent->__get('_id')
+#1 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\SiteController.php(114): LoginForm->login()
+#2 F:\xampp\htdocs\lionwangbak\myApp\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#3 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(283): CController->run('Login')
+#7 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(142): CWebApplication->runController('Site/Login')
+#8 F:\xampp\htdocs\lionwangbak\myApp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/lionwangbak/myApp/sauceApp/index.php/Site/Login
+HTTP_REFERER=http://127.0.0.1/lionwangbak/myApp/sauceApp/
+---
+2013/01/29 14:15:28 [error] [php] Undefined variable: userID (F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\models\LoginForm.php:70)
+Stack trace:
+#0 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(287): SiteController->runAction()
+#2 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(283): SiteController->run()
+#4 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 F:\xampp\htdocs\lionwangbak\myApp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php(13): CWebApplication->run()
+REQUEST_URI=/lionwangbak/myApp/sauceApp/index.php/Site/Login
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\models\LoginForm.php (70)
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\SiteController.php (114)
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php (13)
+2013/01/29 14:15:44 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.userID" is not defined.' in F:\xampp\htdocs\lionwangbak\myApp\framework\base\CComponent.php:131
+Stack trace:
+#0 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\SiteController.php(116): CComponent->__get('userID')
+#1 F:\xampp\htdocs\lionwangbak\myApp\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#2 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(283): CController->run('Login')
+#6 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(142): CWebApplication->runController('Site/Login')
+#7 F:\xampp\htdocs\lionwangbak\myApp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/lionwangbak/myApp/sauceApp/index.php/Site/Login
+HTTP_REFERER=http://127.0.0.1/lionwangbak/myApp/sauceApp/
+---
+2013/01/29 14:16:30 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.userID" is not defined.' in F:\xampp\htdocs\lionwangbak\myApp\framework\base\CComponent.php:131
+Stack trace:
+#0 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\SiteController.php(116): CComponent->__get('userID')
+#1 F:\xampp\htdocs\lionwangbak\myApp\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#2 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(283): CController->run('Login')
+#6 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(142): CWebApplication->runController('Site/Login')
+#7 F:\xampp\htdocs\lionwangbak\myApp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/lionwangbak/myApp/sauceApp/index.php/Site/Login
+HTTP_REFERER=http://127.0.0.1/lionwangbak/myApp/sauceApp/
+---
+2013/01/29 14:18:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42883]: Undefined function: 7 错误:  操作符不存在: character varying = integer
+LINE 6: WHERE d.userid=1
+                      ^
+HINT:  没有匹配指定名称和参数类型的操作符. 您也许需要增加明确的类型转换.. The SQL statement executed was: SELECT "c"."name" AS "PrivilegeName"
+FROM "authitem" "a"
+JOIN "authitemchild" "b" ON a.name = b.parent
+JOIN "authitem" "c" ON c.name = b.child
+JOIN "authassignment" "d" ON d.itemname = a.name
+WHERE d.userid=1.
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\SiteController.php (140)
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\SiteController.php (116)
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php (13)
+2013/01/29 14:18:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42883]: Undefined function: 7 错误:  操作符不存在: character varying = integer
+LINE 6: WHERE d.userid=1
+                      ^
+HINT:  没有匹配指定名称和参数类型的操作符. 您也许需要增加明确的类型转换.. The SQL statement executed was: SELECT "c"."name" AS "PrivilegeName"
+FROM "authitem" "a"
+JOIN "authitemchild" "b" ON a.name = b.parent
+JOIN "authitem" "c" ON c.name = b.child
+JOIN "authassignment" "d" ON d.itemname = a.name
+WHERE d.userid=1' in F:\xampp\htdocs\lionwangbak\myApp\framework\db\CDbCommand.php:528
+Stack trace:
+#0 F:\xampp\htdocs\lionwangbak\myApp\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\SiteController.php(140): CDbCommand->queryAll()
+#2 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\SiteController.php(116): SiteController->getPrivileges(1)
+#3 F:\xampp\htdocs\lionwangbak\myApp\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#4 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(283): CController->run('Login')
+#8 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(142): CWebApplication->runController('Site/Login')
+#9 F:\xampp\htdocs\lionwangbak\myApp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/lionwangbak/myApp/sauceApp/index.php/Site/Login
+HTTP_REFERER=http://127.0.0.1/lionwangbak/myApp/sauceApp/
+---
+2013/01/29 14:21:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42704]: Undefined object: 7 错误:  类型 "string" 不存在
+LINE 6: WHERE d.userid= cast(1 as string)
+                                  ^. The SQL statement executed was: SELECT "c"."name" AS "PrivilegeName"
+FROM "authitem" "a"
+JOIN "authitemchild" "b" ON a.name = b.parent
+JOIN "authitem" "c" ON c.name = b.child
+JOIN "authassignment" "d" ON d.itemname = a.name
+WHERE d.userid= cast(1 as string).
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\SiteController.php (140)
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\SiteController.php (116)
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php (13)
+2013/01/29 14:21:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42704]: Undefined object: 7 错误:  类型 "string" 不存在
+LINE 6: WHERE d.userid= cast(1 as string)
+                                  ^. The SQL statement executed was: SELECT "c"."name" AS "PrivilegeName"
+FROM "authitem" "a"
+JOIN "authitemchild" "b" ON a.name = b.parent
+JOIN "authitem" "c" ON c.name = b.child
+JOIN "authassignment" "d" ON d.itemname = a.name
+WHERE d.userid= cast(1 as string)' in F:\xampp\htdocs\lionwangbak\myApp\framework\db\CDbCommand.php:528
+Stack trace:
+#0 F:\xampp\htdocs\lionwangbak\myApp\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\SiteController.php(140): CDbCommand->queryAll()
+#2 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\SiteController.php(116): SiteController->getPrivileges(1)
+#3 F:\xampp\htdocs\lionwangbak\myApp\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#4 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(283): CController->run('Login')
+#8 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(142): CWebApplication->runController('Site/Login')
+#9 F:\xampp\htdocs\lionwangbak\myApp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/lionwangbak/myApp/sauceApp/index.php/Site/Login
+HTTP_REFERER=http://127.0.0.1/lionwangbak/myApp/sauceApp/
+---
+2013/01/29 14:23:00 [error] [php] Use of undefined constant data - assumed 'data' (F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\SiteController.php:148)
+Stack trace:
+#0 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(287): SiteController->runAction()
+#2 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(283): SiteController->run()
+#4 F:\xampp\htdocs\lionwangbak\myApp\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 F:\xampp\htdocs\lionwangbak\myApp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php(13): CWebApplication->run()
+REQUEST_URI=/lionwangbak/myApp/sauceApp/index.php/Site/Login
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\SiteController.php (148)
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\protected\controllers\SiteController.php (116)
+in F:\xampp\htdocs\lionwangbak\myApp\sauceApp\index.php (13)

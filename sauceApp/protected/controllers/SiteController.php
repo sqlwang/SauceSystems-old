@@ -112,17 +112,37 @@ class SiteController extends Controller
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login()){
-				$result = array('success' => true, 'messasge'=> '登录成功');
-				Yii::app()->session['name'] = 'wangtx';
+				//获取用户的权限信息
+				$data = $this->getPrivileges($model->userID);
+				$result = array('success' => true, 'messasge'=> '登录成功', 'privileges' => $data);
 			}else{
 				$result = array('success' => false, 'messasge'=> '用户名或密码错误');
-				Yii::app()->session['name'] = 'wangtx';
 			}
 			
 		}else{
 			$result = array('success' => false, 'messasge'=> '用户名不存在');
 		}
 		echo json_encode($result);
+	}
+	
+	
+	/**
+	 * get privileges of user
+	 */
+	public function getPrivileges($userID){
+		$items =  Yii::app()->db->createCommand()
+	    ->select('c.name as PrivilegeName')
+	    ->from('authitem a')
+	    ->join('authitemchild b', 'a.name = b.parent')
+		->join('authitem c', 'c.name = b.child')
+		->join('authassignment d', 'd.itemname = a.name')
+	    ->where('d.userid= cast('."$userID" .' as varchar)')
+	    ->queryAll();
+		$data = array();
+		foreach($items as $key =>$value){
+			array_push($data, $value['PrivilegeName']);
+		}
+		return $data;
 	}
 	
 	/**

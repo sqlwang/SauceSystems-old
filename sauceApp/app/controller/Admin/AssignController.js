@@ -17,7 +17,7 @@ Ext.define('SauceApp.controller.Admin.AssignController', {
 			'RoleAssignList button[action=RoleAssignDel]' : {
 				click : this.delAssignRole
 			},
-			'RoleAssignAdd button[action=save]' : {
+			'RoleAddAssign button[action=save]' : {
 				click : this.createRoleAssign
 			},
 			'storeselector' : {

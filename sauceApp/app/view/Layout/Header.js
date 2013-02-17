@@ -21,6 +21,7 @@ Ext.define('SauceApp.view.Layout.Header', {
 				text : '操作员管理',
 				handler : function() {// adding a handler to "Add New X" menu item
 					if(!win) {
+						console.log( 'SaucePrivileges', isAllowedTo('post2', SaucePrivileges));
 						var win = Ext.create('widget.window', {
 							title : '操作员管理',
 							closable : true,
@@ -32,7 +33,7 @@ Ext.define('SauceApp.view.Layout.Header', {
 							bodyStyle : 'padding: 5px;',
 							items : [{
 								xtype: 'UserManagement'
-							}]
+							}]  
 						});
 						Ext.getCmp('adminUserList').getStore().load();
 					}
@@ -64,11 +65,13 @@ Ext.define('SauceApp.view.Layout.Header', {
 		}, {
 			xtype : 'splitbutton',
 			scale : 'large',
-			text : '<span class="subtitle">日志管理</span>'
+			text : '<span class="subtitle">日志管理</span>',
+			hidden :  !isAllowedTo('post', SaucePrivileges)
 		},{
 			xtype : 'splitbutton',
 			scale : 'large',
-			text : '<span class="subtitle">帮助</span>'
+			text : '<span class="subtitle">帮助</span>',
+			hidden :  !isAllowedTo('post2', SaucePrivileges)
 		},{
 			xtype : 'tbfill'
 		},{

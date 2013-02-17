@@ -588,7 +588,7 @@ class PrivilegesController extends Controller
 		} else {
 			$params = $request->params;
 		}
-		$model = $this->loadModel($params['operationName']);
+		$model = $this->loadAssignModel( array('parent' => $params['roleName'], 'child' => $params['assignName']) );
 		if($model){
 			$success = $model->delete();
 			if($success){
@@ -739,4 +739,13 @@ class PrivilegesController extends Controller
 		return $model;
 	}
 	
+	
+	public function loadAssignModel($id)
+	{
+		$model= ItemChild::model()->findByPk($id);
+		if($model===null)
+			return false;
+		
+		return $model;
+	}
 }

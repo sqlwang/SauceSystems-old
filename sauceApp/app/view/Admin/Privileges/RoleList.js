@@ -17,12 +17,15 @@ Ext.define('SauceApp.view.Admin.Privileges.RoleList', {
 				iconCls : 'icon-role-edit',
 				text : '修改角色',
 				scope : this,
-				action : 'editRole'
+				action : 'editRole',
+			hidden :  !isAllowedTo('post2', SaucePrivileges)
 			},{
 				iconCls: 'icon-role-delete',
 				text : '删除角色',
 				id: 'adminRoleDel',
 				disabled : true,
+			hidden :  !isAllowedTo('post2111', SaucePrivileges),
+				//disabled: this.ownerModule.app.isAllowedTo('viewAllPrivileges', this.ownerModule.id) ? false : true
 				action : 'delRole',
 				scope : this
 			}]

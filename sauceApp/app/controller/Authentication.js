@@ -42,6 +42,9 @@ Ext.define('SauceApp.controller.Authentication', {
 				scope : this,
 				success : function(form, action) {
 					loginWin.close();
+					
+					var retorno = Ext.decode(action.response.responseText);
+					SaucePrivileges = retorno.privileges;
 					Ext.ux.Router.redirect('home');
 				},
 				failure : function(form, action) {

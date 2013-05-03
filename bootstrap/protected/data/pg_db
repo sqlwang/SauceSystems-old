@@ -1,0 +1,147 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 9.2.1
+-- Dumped by pg_dump version 9.2.1
+-- Started on 2012-10-14 11:46:40 CST
+
+SET statement_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+
+--
+-- TOC entry 170 (class 3079 OID 11995)
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- TOC entry 2196 (class 0 OID 0)
+-- Dependencies: 170
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- TOC entry 169 (class 1259 OID 16396)
+-- Name: operator; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE operator (
+    op_id integer NOT NULL,
+    op_name character varying(60) NOT NULL,
+    password character varying(60) NOT NULL,
+    creat_time timestamp without time zone DEFAULT now() NOT NULL,
+    last_login_time timestamp without time zone
+);
+
+
+ALTER TABLE public.operator OWNER TO postgres;
+
+--
+-- TOC entry 2197 (class 0 OID 0)
+-- Dependencies: 169
+-- Name: TABLE operator; Type: COMMENT; Schema: public; Owner: postgres
+--
+
+COMMENT ON TABLE operator IS '操作员列表';
+
+
+--
+-- TOC entry 168 (class 1259 OID 16394)
+-- Name: operator_op_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE operator_op_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.operator_op_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 2198 (class 0 OID 0)
+-- Dependencies: 168
+-- Name: operator_op_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE operator_op_id_seq OWNED BY operator.op_id;
+
+
+--
+-- TOC entry 2199 (class 0 OID 0)
+-- Dependencies: 168
+-- Name: operator_op_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('operator_op_id_seq', 1, false);
+
+
+--
+-- TOC entry 2182 (class 2604 OID 16399)
+-- Name: op_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY operator ALTER COLUMN op_id SET DEFAULT nextval('operator_op_id_seq'::regclass);
+
+
+--
+-- TOC entry 2188 (class 0 OID 16396)
+-- Dependencies: 169
+-- Data for Name: operator; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+
+
+--
+-- TOC entry 2185 (class 2606 OID 16404)
+-- Name: operator_op_name_key; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY operator
+    ADD CONSTRAINT operator_op_name_key UNIQUE (op_name);
+
+
+--
+-- TOC entry 2187 (class 2606 OID 16401)
+-- Name: operator_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY operator
+    ADD CONSTRAINT operator_pkey PRIMARY KEY (op_id);
+
+
+--
+-- TOC entry 2195 (class 0 OID 0)
+-- Dependencies: 5
+-- Name: public; Type: ACL; Schema: -; Owner: postgres
+--
+
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE ALL ON SCHEMA public FROM postgres;
+GRANT ALL ON SCHEMA public TO postgres;
+GRANT ALL ON SCHEMA public TO PUBLIC;
+
+
+-- Completed on 2012-10-14 11:46:40 CST
+
+--
+-- PostgreSQL database dump complete
+--
+
